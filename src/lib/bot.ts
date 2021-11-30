@@ -1,6 +1,6 @@
 import { Client, Intents } from 'discord.js';
 import { readdirSync } from 'fs';
-import { COMMAND_TYPE, ICommand } from './common/ICommand';
+import { COMMAND_TYPE, ICommand } from './interfaces/ICommand';
 import StatusCommand from './commands/status';
 import { Container } from './container/container';
 import { logger } from './util/logger';
@@ -62,7 +62,7 @@ export const createBot = async (container: Container) => {
   });
 
   client.on('interactionCreate', async (interaction) => {
-    if (interaction.isContextMenu()) {
+    if (interaction.isContextMenu() || interaction.isCommand()) {
       try {
         if (COMMANDS[interaction.commandName]) {
           COMMANDS[interaction.commandName].execute(interaction, container);

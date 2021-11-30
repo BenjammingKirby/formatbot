@@ -1,13 +1,21 @@
 export const DITypes = {
   uploader: 'uploader',
   formatter: 'formatter',
+  detector: 'detector',
   client: 'client',
+  parser: 'parser',
+  formatService: 'formatService',
+  latexService: 'latexService',
 } as const;
 
 export type Constr<T> = new (...args: unknown[]) => T;
 export type Dependency<T = unknown> = Constr<T>;
 export class Container {
   private readonly _deps: Record<string, unknown> = {};
+
+  getDependencies() {
+    return this._deps;
+  }
 
   set<T>(dep: T, key?: string) {
     // eslint-disable-next-line @typescript-eslint/ban-types

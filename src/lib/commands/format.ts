@@ -1,13 +1,15 @@
 import { InteractionReplyOptions } from 'discord.js';
-import { ICommand, COMMAND_TYPE } from '../common/ICommand';
-import { formatMessage } from '../util/FormatMessage';
+import { DITypes } from '../container/container';
+import { ICommand, COMMAND_TYPE } from '../interfaces/ICommand';
+import { FormatService } from '../service/FormatService';
 
 const FormatCommand: ICommand<COMMAND_TYPE.SLASH> = {
   name: 'Format',
   description: '',
   type: COMMAND_TYPE.SLASH,
   async execute(interaction, container) {
-    // Fix crash in DM
+    // Get service
+    const service = container.getByKey<FormatService>(DITypes.formatService);
     const baseReply: InteractionReplyOptions = { ephemeral: true };
     await interaction.deferReply(baseReply);
     // Parse package.json first
@@ -15,8 +17,8 @@ const FormatCommand: ICommand<COMMAND_TYPE.SLASH> = {
       const message = await interaction.channel.messages.fetch(
         interaction.targetId
       );
-      const reply = await formatMessage(message, container);
-      interaction.editReply({ ...baseReply, content: reply });
+      const formatted = await service.format(message.toString());
+      interaction.editReply({ ...baseReply, content: formatted });
     } catch (err) {
       interaction.editReply({
         ...baseReply,
