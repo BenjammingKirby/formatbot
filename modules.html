@@ -76,9 +76,13 @@
 						</li>                        <li class=" tsd-kind-module">
 						<a href="modules/lib_commands_format.html">lib/commands/format</a>
 						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/lib_commands_formatSlash.html">lib/commands/format<wbr>Slash</a>
+						</li>                        <li class=" tsd-kind-module">
 						<a href="modules/lib_commands_help.html">lib/commands/help</a>
 						</li>                        <li class=" tsd-kind-module">
 						<a href="modules/lib_commands_status.html">lib/commands/status</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/lib_commands_tex.html">lib/commands/tex</a>
 						</li>                        <li class=" tsd-kind-module">
 						<a href="modules/lib_container_container.html">lib/container/container</a>
 						</li>                        <li class=" tsd-kind-module">
@@ -106,11 +110,21 @@
 						</li>                        <li class=" tsd-kind-module">
 						<a href="modules/lib_interfaces_IDetector.html">lib/interfaces/IDetector</a>
 						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/lib_interfaces_IParser.html">lib/interfaces/IParser</a>
+						</li>                        <li class=" tsd-kind-module">
 						<a href="modules/lib_interfaces_IUploader.html">lib/interfaces/IUploader</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/lib_service_FormatService.html">lib/service/<wbr>Format<wbr>Service</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/lib_service_LaTeXService.html">lib/service/<wbr>LaTeXService</a>
 						</li>                        <li class=" tsd-kind-module">
 						<a href="modules/lib_util_Detector.html">lib/util/<wbr>Detector</a>
 						</li>                        <li class=" tsd-kind-module">
 						<a href="modules/lib_util_FormatMessage.html">lib/util/<wbr>Format<wbr>Message</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/lib_util_MessageParser.html">lib/util/<wbr>Message<wbr>Parser</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/lib_util_createCommand.html">lib/util/create<wbr>Command</a>
 						</li>                        <li class=" tsd-kind-module">
 						<a href="modules/lib_util_logger.html">lib/util/logger</a>
 						</li>                        <li class=" tsd-kind-module">
@@ -170,6 +184,18 @@
 							<div class="tsd-navigation secondary">
 								<ul>
 									<li class="tsd-kind-module">
+										<a href="modules/lib_commands_formatSlash.html" class="tsd-kind-icon">lib/commands/format<wbr>Slash</a>
+										<ul>
+											<li class="tsd-kind-variable tsd-parent-kind-module">
+												<a href="modules/lib_commands_formatSlash.html#default" class="tsd-kind-icon">default</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-module">
 										<a href="modules/lib_commands_help.html" class="tsd-kind-icon">lib/commands/help</a>
 										<ul>
 											<li class="tsd-kind-variable tsd-parent-kind-module">
@@ -186,6 +212,18 @@
 										<ul>
 											<li class="tsd-kind-variable tsd-parent-kind-module">
 												<a href="modules/lib_commands_status.html#default" class="tsd-kind-icon">default</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-module">
+										<a href="modules/lib_commands_tex.html" class="tsd-kind-icon">lib/commands/tex</a>
+										<ul>
+											<li class="tsd-kind-variable tsd-parent-kind-module">
+												<a href="modules/lib_commands_tex.html#default" class="tsd-kind-icon">default</a>
 											</li>
 										</ul>
 									</li>
@@ -496,6 +534,44 @@
 													</li>
 												</ul>
 											</li>
+											<li class="tsd-kind-interface tsd-parent-kind-module">
+												<a href="interfaces/lib_interfaces_ICommand.CommandOption.html" class="tsd-kind-icon">Command<wbr>Option</a>
+												<ul>
+													<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#channel" class="tsd-kind-icon">channel</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#description" class="tsd-kind-icon">description</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#member" class="tsd-kind-icon">member</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#message" class="tsd-kind-icon">message</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#name" class="tsd-kind-icon">name</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#options" class="tsd-kind-icon">options</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#required" class="tsd-kind-icon">required</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#role" class="tsd-kind-icon">role</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#type" class="tsd-kind-icon">type</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#user" class="tsd-kind-icon">user</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+														<a href="interfaces/lib_interfaces_ICommand.CommandOption.html#value" class="tsd-kind-icon">value</a>
+													</li>
+												</ul>
+											</li>
 											<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 												<a href="interfaces/lib_interfaces_ICommand.ICommand.html" class="tsd-kind-icon">ICommand</a>
 												<ul>
@@ -504,6 +580,9 @@
 													</li>
 													<li class="tsd-kind-property tsd-parent-kind-interface">
 														<a href="interfaces/lib_interfaces_ICommand.ICommand.html#name" class="tsd-kind-icon">name</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface">
+														<a href="interfaces/lib_interfaces_ICommand.ICommand.html#options" class="tsd-kind-icon">options</a>
 													</li>
 													<li class="tsd-kind-property tsd-parent-kind-interface">
 														<a href="interfaces/lib_interfaces_ICommand.ICommand.html#type" class="tsd-kind-icon">type</a>
@@ -523,10 +602,38 @@
 										<a href="modules/lib_interfaces_IDetector.html" class="tsd-kind-icon">lib/interfaces/IDetector</a>
 										<ul>
 											<li class="tsd-kind-interface tsd-parent-kind-module">
+												<a href="interfaces/lib_interfaces_IDetector.DetectedLanguage.html" class="tsd-kind-icon">Detected<wbr>Language</a>
+												<ul>
+													<li class="tsd-kind-property tsd-parent-kind-interface">
+														<a href="interfaces/lib_interfaces_IDetector.DetectedLanguage.html#fullLangName" class="tsd-kind-icon">full<wbr>Lang<wbr>Name</a>
+													</li>
+													<li class="tsd-kind-property tsd-parent-kind-interface">
+														<a href="interfaces/lib_interfaces_IDetector.DetectedLanguage.html#langKey" class="tsd-kind-icon">lang<wbr>Key</a>
+													</li>
+												</ul>
+											</li>
+											<li class="tsd-kind-interface tsd-parent-kind-module">
 												<a href="interfaces/lib_interfaces_IDetector.IDetector.html" class="tsd-kind-icon">IDetector</a>
 												<ul>
 													<li class="tsd-kind-method tsd-parent-kind-interface">
 														<a href="interfaces/lib_interfaces_IDetector.IDetector.html#detect" class="tsd-kind-icon">detect</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-module">
+										<a href="modules/lib_interfaces_IParser.html" class="tsd-kind-icon">lib/interfaces/IParser</a>
+										<ul>
+											<li class="tsd-kind-interface tsd-parent-kind-module">
+												<a href="interfaces/lib_interfaces_IParser.IParser.html" class="tsd-kind-icon">IParser</a>
+												<ul>
+													<li class="tsd-kind-method tsd-parent-kind-interface">
+														<a href="interfaces/lib_interfaces_IParser.IParser.html#parseMessage" class="tsd-kind-icon">parse<wbr>Message</a>
 													</li>
 												</ul>
 											</li>
@@ -544,6 +651,46 @@
 												<ul>
 													<li class="tsd-kind-method tsd-parent-kind-interface">
 														<a href="interfaces/lib_interfaces_IUploader.IUploader.html#upload" class="tsd-kind-icon">upload</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-module">
+										<a href="modules/lib_service_FormatService.html" class="tsd-kind-icon">lib/service/<wbr>Format<wbr>Service</a>
+										<ul>
+											<li class="tsd-kind-class tsd-parent-kind-module">
+												<a href="classes/lib_service_FormatService.FormatService.html" class="tsd-kind-icon">Format<wbr>Service</a>
+												<ul>
+													<li class="tsd-kind-constructor tsd-parent-kind-class">
+														<a href="classes/lib_service_FormatService.FormatService.html#constructor" class="tsd-kind-icon">constructor</a>
+													</li>
+													<li class="tsd-kind-method tsd-parent-kind-class">
+														<a href="classes/lib_service_FormatService.FormatService.html#format" class="tsd-kind-icon">format</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-module">
+										<a href="modules/lib_service_LaTeXService.html" class="tsd-kind-icon">lib/service/<wbr>LaTeXService</a>
+										<ul>
+											<li class="tsd-kind-class tsd-parent-kind-module">
+												<a href="classes/lib_service_LaTeXService.LaTeXService.html" class="tsd-kind-icon">La<wbr>TeXService</a>
+												<ul>
+													<li class="tsd-kind-constructor tsd-parent-kind-class">
+														<a href="classes/lib_service_LaTeXService.LaTeXService.html#constructor" class="tsd-kind-icon">constructor</a>
+													</li>
+													<li class="tsd-kind-method tsd-parent-kind-class">
+														<a href="classes/lib_service_LaTeXService.LaTeXService.html#format" class="tsd-kind-icon">format</a>
 													</li>
 												</ul>
 											</li>
@@ -586,6 +733,41 @@
 							<div class="tsd-navigation secondary">
 								<ul>
 									<li class="tsd-kind-module">
+										<a href="modules/lib_util_MessageParser.html" class="tsd-kind-icon">lib/util/<wbr>Message<wbr>Parser</a>
+										<ul>
+											<li class="tsd-kind-class tsd-parent-kind-module">
+												<a href="classes/lib_util_MessageParser.Parser.html" class="tsd-kind-icon">Parser</a>
+												<ul>
+													<li class="tsd-kind-constructor tsd-parent-kind-class">
+														<a href="classes/lib_util_MessageParser.Parser.html#constructor" class="tsd-kind-icon">constructor</a>
+													</li>
+													<li class="tsd-kind-method tsd-parent-kind-class">
+														<a href="classes/lib_util_MessageParser.Parser.html#parseMessage" class="tsd-kind-icon">parse<wbr>Message</a>
+													</li>
+												</ul>
+											</li>
+											<li class="tsd-kind-type-alias tsd-parent-kind-module">
+												<a href="modules/lib_util_MessageParser.html#CodeBlock" class="tsd-kind-icon">Code<wbr>Block</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-module">
+										<a href="modules/lib_util_createCommand.html" class="tsd-kind-icon">lib/util/create<wbr>Command</a>
+										<ul>
+											<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+												<a href="modules/lib_util_createCommand.html#createCommand" class="tsd-kind-icon">create<wbr>Command</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-module">
 										<a href="modules/lib_util_logger.html" class="tsd-kind-icon">lib/util/logger</a>
 										<ul>
 											<li class="tsd-kind-variable tsd-parent-kind-module">
@@ -614,6 +796,9 @@
 										<ul>
 											<li class="tsd-kind-function tsd-parent-kind-module">
 												<a href="modules/lib_util_utils.html#asyncStringReplacer" class="tsd-kind-icon">async<wbr>String<wbr>Replacer</a>
+											</li>
+											<li class="tsd-kind-function tsd-parent-kind-module">
+												<a href="modules/lib_util_utils.html#checkIfLanguageSupported" class="tsd-kind-icon">check<wbr>IfLanguage<wbr>Supported</a>
 											</li>
 											<li class="tsd-kind-function tsd-parent-kind-module">
 												<a href="modules/lib_util_utils.html#commentify" class="tsd-kind-icon">commentify</a>

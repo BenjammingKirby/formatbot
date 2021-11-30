@@ -89,9 +89,13 @@
 						</li>                        <li class=" tsd-kind-module">
 						<a href="lib_commands_format.html">lib/commands/format</a>
 						</li>                        <li class=" tsd-kind-module">
+						<a href="lib_commands_formatSlash.html">lib/commands/format<wbr>Slash</a>
+						</li>                        <li class=" tsd-kind-module">
 						<a href="lib_commands_help.html">lib/commands/help</a>
 						</li>                        <li class=" tsd-kind-module">
 						<a href="lib_commands_status.html">lib/commands/status</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="lib_commands_tex.html">lib/commands/tex</a>
 						</li>                        <li class=" tsd-kind-module">
 						<a href="lib_container_container.html">lib/container/container</a>
 						</li>                        <li class=" tsd-kind-module">
@@ -119,11 +123,21 @@
 						</li>                        <li class=" tsd-kind-module">
 						<a href="lib_interfaces_IDetector.html">lib/interfaces/IDetector</a>
 						</li>                        <li class=" tsd-kind-module">
+						<a href="lib_interfaces_IParser.html">lib/interfaces/IParser</a>
+						</li>                        <li class=" tsd-kind-module">
 						<a href="lib_interfaces_IUploader.html">lib/interfaces/IUploader</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="lib_service_FormatService.html">lib/service/<wbr>Format<wbr>Service</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="lib_service_LaTeXService.html">lib/service/<wbr>LaTeXService</a>
 						</li>                        <li class=" tsd-kind-module">
 						<a href="lib_util_Detector.html">lib/util/<wbr>Detector</a>
 						</li>                        <li class=" tsd-kind-module">
 						<a href="lib_util_FormatMessage.html">lib/util/<wbr>Format<wbr>Message</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="lib_util_MessageParser.html">lib/util/<wbr>Message<wbr>Parser</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="lib_util_createCommand.html">lib/util/create<wbr>Command</a>
 						</li>                        <li class=" tsd-kind-module">
 						<a href="lib_util_logger.html">lib/util/logger</a>
 						</li>                        <li class=" tsd-kind-module">
@@ -164,20 +178,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-descriptions">
 					<a name="languageMappings" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> language<wbr>Mappings</h3>
-					<div class="tsd-signature tsd-kind-icon">languageMappings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/lib_formatters_BaseFormatter.IFormatter.html" class="tsd-signature-type">IFormatter</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<div class="tsd-signature tsd-kind-icon">languageMappings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">keyof typeof languageNameMappings</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/lib_formatters_BaseFormatter.IFormatter.html" class="tsd-signature-type">IFormatter</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/BenjammingKirby/formatbot/blob/2e83620/src/lib/formatters/FormatterMappings.ts#L24">src/lib/formatters/FormatterMappings.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/BenjammingKirby/formatbot/blob/444406a/src/lib/formatters/FormatterMappings.ts#L24">src/lib/formatters/FormatterMappings.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-descriptions">
 					<a name="languageNameMappings" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> language<wbr>Name<wbr>Mappings</h3>
-					<div class="tsd-signature tsd-kind-icon">languageNameMappings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<div class="tsd-signature tsd-kind-icon">languageNameMappings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/BenjammingKirby/formatbot/blob/2e83620/src/lib/formatters/FormatterMappings.ts#L47">src/lib/formatters/FormatterMappings.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/BenjammingKirby/formatbot/blob/444406a/src/lib/formatters/FormatterMappings.ts#L50">src/lib/formatters/FormatterMappings.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>

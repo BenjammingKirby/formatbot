@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICommand | formatbot</title>
+	<title>CommandOption | formatbot</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -60,7 +60,7 @@
 					<a href="../modules/lib_interfaces_ICommand.html">lib/interfaces/ICommand</a>
 				</li>
 				<li>
-					<a href="lib_interfaces_ICommand.ICommand.html">ICommand</a>
+					<a href="lib_interfaces_ICommand.CommandOption.html">CommandOption</a>
 				</li>
 			</ul>
 		</div>
@@ -75,33 +75,51 @@
 						<li class=" tsd-kind-enum tsd-parent-kind-module">
 							<a href="../enums/lib_interfaces_ICommand.COMMAND_TYPE.html" class="tsd-kind-icon">COMMAND_<wbr>TYPE</a>
 						</li>
-						<li class=" tsd-kind-interface tsd-parent-kind-module">
-							<a href="lib_interfaces_ICommand.CommandOption.html" class="tsd-kind-icon">Command<wbr>Option</a>
-						</li>
 					</ul>
 					<ul class="current">
-						<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-							<a href="lib_interfaces_ICommand.ICommand.html" class="tsd-kind-icon">ICommand</a>
+						<li class="current tsd-kind-interface tsd-parent-kind-module">
+							<a href="lib_interfaces_ICommand.CommandOption.html" class="tsd-kind-icon">Command<wbr>Option</a>
 							<ul>
-								<li class=" tsd-kind-property tsd-parent-kind-interface">
-									<a href="lib_interfaces_ICommand.ICommand.html#description" class="tsd-kind-icon">description</a>
+								<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+									<a href="lib_interfaces_ICommand.CommandOption.html#channel" class="tsd-kind-icon">channel</a>
 								</li>
 								<li class=" tsd-kind-property tsd-parent-kind-interface">
-									<a href="lib_interfaces_ICommand.ICommand.html#name" class="tsd-kind-icon">name</a>
+									<a href="lib_interfaces_ICommand.CommandOption.html#description" class="tsd-kind-icon">description</a>
+								</li>
+								<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+									<a href="lib_interfaces_ICommand.CommandOption.html#member" class="tsd-kind-icon">member</a>
+								</li>
+								<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+									<a href="lib_interfaces_ICommand.CommandOption.html#message" class="tsd-kind-icon">message</a>
+								</li>
+								<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+									<a href="lib_interfaces_ICommand.CommandOption.html#name" class="tsd-kind-icon">name</a>
+								</li>
+								<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+									<a href="lib_interfaces_ICommand.CommandOption.html#options" class="tsd-kind-icon">options</a>
 								</li>
 								<li class=" tsd-kind-property tsd-parent-kind-interface">
-									<a href="lib_interfaces_ICommand.ICommand.html#options" class="tsd-kind-icon">options</a>
+									<a href="lib_interfaces_ICommand.CommandOption.html#required" class="tsd-kind-icon">required</a>
 								</li>
-								<li class=" tsd-kind-property tsd-parent-kind-interface">
-									<a href="lib_interfaces_ICommand.ICommand.html#type" class="tsd-kind-icon">type</a>
+								<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+									<a href="lib_interfaces_ICommand.CommandOption.html#role" class="tsd-kind-icon">role</a>
 								</li>
-								<li class=" tsd-kind-method tsd-parent-kind-interface">
-									<a href="lib_interfaces_ICommand.ICommand.html#execute" class="tsd-kind-icon">execute</a>
+								<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+									<a href="lib_interfaces_ICommand.CommandOption.html#type" class="tsd-kind-icon">type</a>
+								</li>
+								<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+									<a href="lib_interfaces_ICommand.CommandOption.html#user" class="tsd-kind-icon">user</a>
+								</li>
+								<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+									<a href="lib_interfaces_ICommand.CommandOption.html#value" class="tsd-kind-icon">value</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
 					<ul class="after-current">
+						<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+							<a href="lib_interfaces_ICommand.ICommand.html" class="tsd-kind-icon">ICommand</a>
+						</li>
 					</ul>
 				</ul>
 				<ul>
@@ -177,18 +195,16 @@
 			</nav>
 		</div>
 		<div class="col-9 col-content">
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-					<span class="name">T</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">typeof COMMAND_TYPE[keyof typeof COMMAND_TYPE]</span>                    </li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ICommand</span>
+						<span class="tsd-signature-type">CommandInteractionOption</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">CommandOption</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -199,39 +215,78 @@
 							<h3>Properties</h3>
 							<div class="tsd-navigation secondary">
 								<ul>
-									<li class="tsd-kind-property tsd-parent-kind-interface">
-										<a href="lib_interfaces_ICommand.ICommand.html#description" class="tsd-kind-icon">description</a>
+									<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+										<a href="lib_interfaces_ICommand.CommandOption.html#channel" class="tsd-kind-icon">channel</a>
 									</li>
 								</ul>
 							</div>
 							<div class="tsd-navigation secondary">
 								<ul>
 									<li class="tsd-kind-property tsd-parent-kind-interface">
-										<a href="lib_interfaces_ICommand.ICommand.html#name" class="tsd-kind-icon">name</a>
+										<a href="lib_interfaces_ICommand.CommandOption.html#description" class="tsd-kind-icon">description</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+										<a href="lib_interfaces_ICommand.CommandOption.html#member" class="tsd-kind-icon">member</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+										<a href="lib_interfaces_ICommand.CommandOption.html#message" class="tsd-kind-icon">message</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+										<a href="lib_interfaces_ICommand.CommandOption.html#name" class="tsd-kind-icon">name</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+										<a href="lib_interfaces_ICommand.CommandOption.html#options" class="tsd-kind-icon">options</a>
 									</li>
 								</ul>
 							</div>
 							<div class="tsd-navigation secondary">
 								<ul>
 									<li class="tsd-kind-property tsd-parent-kind-interface">
-										<a href="lib_interfaces_ICommand.ICommand.html#options" class="tsd-kind-icon">options</a>
+										<a href="lib_interfaces_ICommand.CommandOption.html#required" class="tsd-kind-icon">required</a>
 									</li>
 								</ul>
 							</div>
 							<div class="tsd-navigation secondary">
 								<ul>
-									<li class="tsd-kind-property tsd-parent-kind-interface">
-										<a href="lib_interfaces_ICommand.ICommand.html#type" class="tsd-kind-icon">type</a>
+									<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+										<a href="lib_interfaces_ICommand.CommandOption.html#role" class="tsd-kind-icon">role</a>
 									</li>
 								</ul>
 							</div>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
 							<div class="tsd-navigation secondary">
 								<ul>
-									<li class="tsd-kind-method tsd-parent-kind-interface">
-										<a href="lib_interfaces_ICommand.ICommand.html#execute" class="tsd-kind-icon">execute</a>
+									<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+										<a href="lib_interfaces_ICommand.CommandOption.html#type" class="tsd-kind-icon">type</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+										<a href="lib_interfaces_ICommand.CommandOption.html#user" class="tsd-kind-icon">user</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tsd-navigation secondary">
+								<ul>
+									<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+										<a href="lib_interfaces_ICommand.CommandOption.html#value" class="tsd-kind-icon">value</a>
 									</li>
 								</ul>
 							</div>
@@ -241,70 +296,123 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external tsd-descriptions">
+					<a name="channel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> channel</h3>
+					<div class="tsd-signature tsd-kind-icon">channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GuildChannel</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">APIInteractionDataResolvedChannel</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from CommandInteractionOption.channel</p>
+						<ul>
+							<li>Defined in node_modules/discord.js/typings/index.d.ts:3326</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-descriptions">
 					<a name="description" class="tsd-anchor"></a>
 					<h3>description</h3>
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/BenjammingKirby/formatbot/blob/444406a/src/lib/interfaces/ICommand.ts#L12">src/lib/interfaces/ICommand.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/BenjammingKirby/formatbot/blob/444406a/src/lib/interfaces/ICommand.ts#L26">src/lib/interfaces/ICommand.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-descriptions">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external tsd-descriptions">
+					<a name="member" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> member</h3>
+					<div class="tsd-signature tsd-kind-icon">member<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">GuildMember</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">APIInteractionDataResolvedGuildMember</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from CommandInteractionOption.member</p>
+						<ul>
+							<li>Defined in node_modules/discord.js/typings/index.d.ts:3325</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external tsd-descriptions">
+					<a name="message" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">APIMessage</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from CommandInteractionOption.message</p>
+						<ul>
+							<li>Defined in node_modules/discord.js/typings/index.d.ts:3328</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external tsd-descriptions">
 					<a name="name" class="tsd-anchor"></a>
 					<h3>name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from CommandInteractionOption.name</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/BenjammingKirby/formatbot/blob/444406a/src/lib/interfaces/ICommand.ts#L11">src/lib/interfaces/ICommand.ts:11</a></li>
+							<li>Defined in node_modules/discord.js/typings/index.d.ts:3320</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-descriptions">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external tsd-descriptions">
 					<a name="options" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="lib_interfaces_ICommand.CommandOption.html" class="tsd-signature-type">CommandOption</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CommandInteractionOption</span>    <span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from CommandInteractionOption.options</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/BenjammingKirby/formatbot/blob/444406a/src/lib/interfaces/ICommand.ts#L14">src/lib/interfaces/ICommand.ts:14</a></li>
+							<li>Defined in node_modules/discord.js/typings/index.d.ts:3323</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-descriptions">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
+					<a name="required" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> required</h3>
+					<div class="tsd-signature tsd-kind-icon">required<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/BenjammingKirby/formatbot/blob/444406a/src/lib/interfaces/ICommand.ts#L13">src/lib/interfaces/ICommand.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/BenjammingKirby/formatbot/blob/444406a/src/lib/interfaces/ICommand.ts#L25">src/lib/interfaces/ICommand.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-descriptions">
-					<a name="execute" class="tsd-anchor"></a>
-					<h3>execute</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">execute<span class="tsd-signature-symbol">(</span>interaction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Mapped[T]</span>, container<span class="tsd-signature-symbol">: </span><a href="../classes/lib_container_container.Container.html" class="tsd-signature-type">Container</a>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>    <span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<h4 class="tsd-parameters-title">Parameters</h4>
-					<ul class="tsd-parameters">
-						<li>
-							<span class="name">interaction</span>: <span class="tsd-signature-type">Mapped[T]</span>
-						</li>
-						<li>
-							<span class="name">container</span>: <a href="../classes/lib_container_container.Container.html" class="tsd-signature-type">Container</a>
-						</li>
-						<li>
-							<span class="name">args</span>: <span class="tsd-signature-type">string</span>    <span class="tsd-signature-symbol">[]</span> <span class="tsd-flag ts-flagOptional">Optional</span>
-						</li>
-					</ul>
-					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span>    </h4>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external tsd-descriptions">
+					<a name="role" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> role</h3>
+					<div class="tsd-signature tsd-kind-icon">role<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Role</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">APIRole</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from CommandInteractionOption.role</p>
+						<ul>
+							<li>Defined in node_modules/discord.js/typings/index.d.ts:3327</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external tsd-descriptions">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"USER"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"CHANNEL"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"STRING"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"SUB_COMMAND"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"SUB_COMMAND_GROUP"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"INTEGER"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"BOOLEAN"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ROLE"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"MENTIONABLE"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"NUMBER"</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from CommandInteractionOption.type</p>
+						<ul>
+							<li>Defined in node_modules/discord.js/typings/index.d.ts:3321</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external tsd-descriptions">
+					<a name="user" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> user</h3>
+					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">User</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from CommandInteractionOption.user</p>
+						<ul>
+							<li>Defined in node_modules/discord.js/typings/index.d.ts:3324</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external tsd-descriptions">
+					<a name="value" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from CommandInteractionOption.value</p>
+						<ul>
+							<li>Defined in node_modules/discord.js/typings/index.d.ts:3322</li>
+						</ul>
 					</aside>
 				</section>
 			</section>
